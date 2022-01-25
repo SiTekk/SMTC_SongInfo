@@ -14,12 +14,10 @@ namespace SMTC_SongInfo
         private static GlobalSystemMediaTransportControlsSessionMediaProperties mediaProperties;
         private static string previousTitle;
         private static string songInfoFilePath;
-        private static string songThumbnailPath;
 
         /// <summary>
-        ///
+        /// Gets the thumbnail of the SMT Control and safes it relative to the .exe
         /// </summary>
-        /// <param name="fileStream"></param>
         private static void GetThumbnail(IRandomAccessStreamWithContentType fileStream)
         {
             using (var reader = new BinaryReader(fileStream.AsStream()))
@@ -35,11 +33,6 @@ namespace SMTC_SongInfo
             }
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="args"></param>
-        /// <returns></returns>
         private static async Task Main(string[] args) //https://stackoverflow.com/questions/57580053/using-systemmediatransportcontrols-to-get-current-playing-song-info-from-other-a
         {
             mediaControl = await GlobalSystemMediaTransportControlsSessionManager.RequestAsync();
@@ -69,7 +62,7 @@ namespace SMTC_SongInfo
         }
 
         /// <summary>
-        /// Cleares the File when the Program gets terminated with Ctrl + C
+        /// Cleares the Files when the Program gets terminated with Ctrl + C
         /// </summary>
         private static void OnConsoleCancleEvent(object sender, ConsoleCancelEventArgs args)
         {
@@ -80,7 +73,6 @@ namespace SMTC_SongInfo
         /// <summary>
         /// Gets the current SMTC Manager and reads the Artist and the Title from it and writes it into a file. If there is no SMTC it throws a NullReferenceException.
         /// </summary>
-        /// <returns></returns>
         private static async Task SMTC_SongInfoAsync()
         {
             //mediaControl = await GlobalSystemMediaTransportControlsSessionManager.RequestAsync
