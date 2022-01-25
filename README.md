@@ -2,7 +2,7 @@
 
 This tool retrieves the Information that the System Media Transport Control (SMTC) provides. For example the name of the song or the artist to display it in OBS.
 
-![Alt text](https://docs.microsoft.com/en-us/uwp/api/windows.media/images/smtc.png?view=winrt-22000 "a title")
+![Alt text](https://docs.microsoft.com/en-us/uwp/api/windows.media/images/smtc.png?view=winrt-22000 "System Media Transport Control")
 
 More information about the SMTC can be found here https://docs.microsoft.com/en-us/uwp/api/Windows.Media.SystemMediaTransportControls?view=winrt-22000.
 
