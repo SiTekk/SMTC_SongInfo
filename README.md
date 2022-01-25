@@ -1,6 +1,6 @@
 # SMTC_SongInfo
 
-This tool retrieves the Information that the System Media Transport Control (SMTC) provides. For example the name of the song or the artist to display it for example in OBS.
+This tool retrieves the Information that the System Media Transport Control (SMTC) provides. For example the name of the song or the artist to display it in OBS.
 
 ![Alt text](https://docs.microsoft.com/en-us/uwp/api/windows.media/images/smtc.png?view=winrt-22000 "a title")
 
