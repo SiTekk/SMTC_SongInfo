@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SMTC_SongInfo": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
